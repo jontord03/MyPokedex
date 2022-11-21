@@ -1,0 +1,109 @@
+html, body {
+  padding: 0; 
+  margin: 0; 
+  background-color: #c8183b;
+}
+
+.title {
+  color: aliceblue; 
+  margin: calc(2rem + 2vw); 
+  font-size: calc(3rem + 3vw); 
+  letter-spacing: calc(0.2rem + 0.2vw);
+  font-family: Verdana; 
+  font-weight: 600; 
+}
+
+/* CARD STYLING */
+
+.card {
+  background-color: cornsilk; 
+  border-radius: calc(0.5rem + 0.5vw); 
+  padding: 1rem; 
+  height: calc(17rem + 10vw); 
+  /* flex layout */
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.input-area {
+  margin-top: calc(1rem + 1vw);
+  margin-left: calc(0.5rem + 0.5vw);  
+}
+
+.enter-text {
+  white-space: pre-line; 
+}
+
+.screen {
+  background-color: lightskyblue;
+  height: calc(10rem + 10vw);
+  border-radius: calc(0.3rem + 0.3vw);
+}
+
+.btn-danger {
+  /* top, right, bottom, left */
+  padding: calc(0.2rem + 0.2vw) calc(0.2rem + 0.2vw) calc(0.03rem + 0.03vw) calc(0.2rem + 0.2vw); 
+}
+
+.container {
+  max-width: 1000px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  padding-right: 15px; 
+  padding-left: 15px; 
+}
+
+span {
+  margin-left: calc(0.7rem + 0.7vw); 
+  margin-right: calc(1rem + 1vw); 
+  margin-top: calc(0.5rem + 0.5vw); 
+  position: absolute;  
+}
+
+::placeholder {
+  padding: calc(0.5rem + 0.5vw); 
+}
+
+/* LAYOUT */
+.cards-list {
+  display: grid; 
+  grid-gap: 1rem; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-bottom: calc(2rem + 2vw); 
+}
+
+.card-footer {
+  display: flex; 
+  align-items: center; 
+  /* positions date on left, trash on right */
+  justify-content: space-between;
+}
+
+/* NEW CARD */
+
+.card.new {
+  background-color: rgb(200, 237, 249);
+}
+
+textarea {
+  border: none; 
+  resize: none; 
+  background-color: lightskyblue;
+  border-radius: calc(0.3rem + 0.3vw); 
+  height: calc(10rem + 10vw);
+}
+
+textarea:focus {
+  outline: none; 
+}
+
+.save {
+  border: none; 
+  border-radius: calc(0.8rem + 0.8vw); 
+  padding: calc(0.2rem + 0.2vw) calc(0.3rem + 0.3vw); 
+}
+
+.save:hover {
+  cursor: pointer; 
+}
